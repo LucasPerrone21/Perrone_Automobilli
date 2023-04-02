@@ -35,10 +35,10 @@ button {
 .car_list_item {
   display: flex;
   flex-direction: column;
-  width: 40%;
   align-items: center;
   margin-bottom: 2rem;
   transition: 200ms;
+  max-width: 700px;
 }
 
 .car_list_item:hover {
@@ -58,6 +58,7 @@ button {
   width: 100%;
   object-fit: cover;
   position: relative;
+  cursor: pointer;
 }
 
 .opiniao_titulo {
@@ -112,4 +113,38 @@ button {
   background: #fefefe;
   padding: 10px 0;
   border-radius: 0 0 10px 10px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1130px) {
+  .projetos_titulo {
+    font-size: 3rem;
+  }
+  .projetos_titulo::after {
+    content: "";
+  }
+
+  .projetos_titulo::before {
+    content: "";
+  }
+
+  .car_list_item {
+    margin: 2rem;
+  }
+
+  .car_title {
+    font-size: 1.5rem;
+  }
+
+  .nissan_opiniao_div,
+  .subaru_opiniao_div,
+  .omega_opiniao_div {
+    line-height: 1;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .car_text {
+    font-size: 1rem;
+  }
 }

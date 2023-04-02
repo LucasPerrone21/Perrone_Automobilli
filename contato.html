@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Perrone Automobilli - Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div>
+            <img class="logomarca" src="logo.svg" alt="">
+        </div>
+        <nav class="nav-principal">
+            <ul class="conteiner">
+                <li><a class="item-nav" href="index.html">Home</a></li>
+                <li><a class="item-nav" href="nossosProjetos.html">Nossos Projetos</a></li>
+                <li><a class="item-nav" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contato">
+        <h1 class="contato_titulo">Contato</h1>
+        <form action="">
+            <div class="form_externo">
+                <div class="form_interno">
+                    <div class="form_interno_dados">
+                        <label class="entrada_texto" for="nomesobrenome">Nome e Sobrenome</label>
+                        <input class="entrada_input" type="text" placeholder="Fulano de Ciclano" required>
+                        <label class="entrada_texto" for="email">E-mail</label>
+                        <input class="entrada_input" type="email" placeholder="CarinhaQueMoraLogoAli@dominio.com" required>
+                        <label class="entrada_texto" for="tel">Telefone</label>
+                        <input class="entrada_input" type="tel" placeholder="(XX) 91239-5271" required>
+                        <label class="entrada_texto" for="mensagem">Mensagem</label>
+                        <textarea class="mensagem" name="" id="mensagem" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="form_interno_localizacao">
+                        <fieldset class="unidade_box">
+                            <legend class="texto_unidade">Selecione a unidade</legend>
+                            <label class="selector_unidade" for="radio-salvador">
+                                <input type="radio" name="unidade" value="salvador" checked>
+                                Salvador - BA
+                            </label>
+                            <label class="selector_unidade" for="radio-feira-de-santana">
+                                <input type="radio" name="unidade" value="feira-de-santana">
+                                Feira de Santana - BA
+                            </label>
+                            <label class="selector_unidade" for="radio-lauro-de-freitas">
+                                <input type="radio" name="unidade" value="lauro-de-freitas">
+                                Lauro de Freitas - BA
+                            </label>
+                        </fieldset>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.474568617997!2d-38.48987709345934!3d-12.941456242295155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716054e2d06e49f%3A0x494a15857fa31960!2sO%20Sucat%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1680447887925!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" class="mapa" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <button class="enviar_botao" type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <ul class="rodape_box1">
+            <li class="redes_sociais">
+                <h3 class="rodape_titulo">Siga nossas redes sociais</h3>
+                <p>Fique ligado em promoções e sorteios</p>
+                <ul class="redes_sociais_box">
+                    <li><a href="#"><img class="redes_sociais_icones" src="Imagens/icones/icons8-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img class="redes_sociais_icones" src="Imagens/icones/icons8-instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="#"><img class="redes_sociais_icones" src="Imagens/icones/icons8-reproduzir-youtube.svg" alt="Youtube"></a></li>
+                </ul>
+            </li>
+            <li class="encontre">
+                <h3 class="rodape_titulo">Encontre-nos</h3>
+                <ul class="encontre_lista">
+                    <li>
+                        <p>Salvador - BA</p>
+                    </li>
+                    <li>
+                        <p>Feira de Santana - BA</p>
+                    </li>
+                    <li>
+                        <p>Lauro de Freitas - BA</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="rodape_box2">
+            <p>Site feito apenas com princípios de estudo, tudo feito aqui é puramente fictício</p>
+            <p>Feito por: Lucas Perrone</p>
+        </div>
+    </footer>
+</body>
+
+</html>

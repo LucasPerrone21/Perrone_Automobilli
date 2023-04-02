@@ -15,7 +15,7 @@ body {
   margin-left: 1em;
 }
 
-nav .conteiner {
+.conteiner {
   display: flex;
 }
 
@@ -48,7 +48,7 @@ nav .conteiner {
 /* serviços */
 .servicos {
   height: 800px;
-  background-image: url(Imagens/background_home.jpeg);
+  background-image: url(Imagens/background_home.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -217,4 +217,126 @@ nav .conteiner {
 }
 .encontre_lista p::before {
   content: ". ";
+}
+
+@media screen and (max-width: 1130px) {
+  .cabecalho {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .logomarca {
+    width: 20rem;
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+  .nav-principal .conteiner li {
+    margin: 1rem;
+    transition: 0.2s;
+  }
+  .item-nav {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .item-nav::after {
+    content: "";
+  }
+
+  .item-nav::before {
+    content: "";
+  }
+
+  .servicos {
+    padding: 0 0 0 0;
+    justify-content: space-around;
+  }
+
+  .servicos_titulo {
+    font-size: 3rem;
+  }
+
+  .servicos_titulo::after {
+    content: "";
+  }
+
+  .servicos_titulo::before {
+    content: "";
+  }
+
+  .servicos_lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  .servicos_lista_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    padding: 0 5% 0 5%;
+  }
+
+  .central {
+    border-left: 0 solid #fefefe;
+    border-right: 0 solid #fefefe;
+    border-top: 1px solid #fefefe;
+    border-bottom: 1px solid #fefefe;
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+
+  .sobre_titulo {
+    font-size: 3rem;
+  }
+
+  .sobre_titulo::after {
+    content: "";
+  }
+
+  .sobre_titulo::before {
+    content: "";
+  }
+
+  .sobre_texto {
+    max-width: 100%;
+    padding: 2rem 1rem;
+    font-size: 0.6;
+  }
+
+  .marcas_titulo {
+    font-size: 3rem;
+  }
+
+  .marcas_titulo::after {
+    content: "";
+  }
+
+  .marcas_titulo::before {
+    content: "";
+  }
+  .marcas_item {
+    width: 50%;
+  }
+  .marcas_imagem {
+    max-width: 6rem;
+    margin: 2rem;
+  }
+
+  .rodape_box1 {
+    flex-direction: column;
+    line-height: 1;
+    padding: 2rem;
+  }
+
+  .encontre_lista {
+    text-align: center;
+  }
+
+  .redes_sociais {
+    margin: auto;
+  }
 }
