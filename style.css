@@ -1,0 +1,220 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* HEADER */
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fefefe;
+  padding: 3rem 0;
+}
+
+.logomarca {
+  width: 25rem;
+  margin-left: 1em;
+}
+
+nav .conteiner {
+  display: flex;
+}
+
+.item-nav {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.item-nav::after {
+  content: " ]";
+}
+
+.item-nav::before {
+  content: "[ ";
+}
+
+.nav-principal .conteiner li {
+  margin-left: 5rem;
+  transition: 0.2s;
+}
+
+.nav-principal .conteiner li:hover {
+  scale: 1.05;
+}
+
+/* HOMEPAGE */
+
+/* serviços */
+.servicos {
+  height: 800px;
+  background-image: url(Imagens/2-4-01.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 4rem 0 4rem 0;
+}
+
+.servicos_titulo {
+  font-size: 5rem;
+  color: #fefefe;
+}
+
+.servicos_titulo::after {
+  content: " ]";
+}
+
+.servicos_titulo::before {
+  content: "[ ";
+}
+
+.servicos_lista {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+}
+
+.central {
+  border-left: 1px solid #fefefe;
+  border-right: 1px solid #fefefe;
+}
+
+.servicos_lista_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+  padding: 0 5% 0 5%;
+}
+
+.servicos_lista_item_titulo {
+  color: #fefefe;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.servicos_lista_item_texto {
+  color: #fefefe;
+}
+
+/* Quem somos nós */
+
+.sobre {
+  background: #141414;
+  padding-bottom: 2rem;
+}
+
+.sobre_titulo {
+  font-size: 5rem;
+  color: #fefefe;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.sobre_titulo::after {
+  content: " ]";
+}
+
+.sobre_titulo::before {
+  content: "[ ";
+}
+
+.sobre_texto {
+  text-align: justify;
+  max-width: 50%;
+  padding: 2rem 25% 2rem 25%;
+  font-size: 1.2rem;
+  color: #fefefe;
+  line-height: 2;
+}
+
+/*Marcas */
+
+.marcas {
+  background-color: #fefefe;
+}
+
+.marcas_titulo {
+  font-size: 5rem;
+  color: #000;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.marcas_titulo::after {
+  content: " ]";
+}
+
+.marcas_titulo::before {
+  content: "[ ";
+}
+
+.marcas_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.marcas_item {
+  width: 30%;
+  text-align: center;
+}
+.marcas_imagem {
+  max-width: 300px;
+  margin: 2rem;
+}
+
+/* FOOTER */
+
+.rodape_box1 {
+  background-color: #141414;
+  color: #fefefe;
+  text-align: center;
+  padding: 4rem;
+
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+}
+
+.rodape_box2 {
+  background-color: #141414;
+  color: #fefefe;
+  text-align: center;
+  padding-bottom: 4rem;
+  line-height: 2;
+}
+
+.rodape_titulo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.redes_sociais {
+  margin-right: 4rem;
+}
+
+.redes_sociais_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes_sociais_icones {
+  width: 3.5rem;
+}
+
+.encontre_lista {
+  text-align: justify;
+}
+.encontre_lista p::before {
+  content: ". ";
+}
