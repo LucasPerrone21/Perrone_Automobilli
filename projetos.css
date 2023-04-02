@@ -1,0 +1,110 @@
+button {
+  padding: 0;
+  border: 0;
+}
+
+.projetos_box {
+  background-image: url(Imagens/background_projetos.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.projetos_titulo {
+  font-size: 5rem;
+  color: #fefefe;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.projetos_titulo::after {
+  content: " ]";
+}
+
+.projetos_titulo::before {
+  content: "[ ";
+}
+.car_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.car_list_item {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  margin-bottom: 2rem;
+  box-shadow: 10px 10px 20px 4px black;
+}
+
+.car_title {
+  text-align: center;
+  font-size: 2rem;
+  color: #141414;
+  background-color: #fefefe;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.car_img {
+  width: 100%;
+  object-fit: cover;
+
+  position: relative;
+}
+.opiniao_titulo {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.nissan_opiniao_div {
+  display: none;
+  z-index: 2;
+  background-color: #fefefea6;
+  padding: 2rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+#nissan:hover,
+#nissan:focus + .nissan_opiniao_div {
+  display: block;
+}
+
+.subaru_opiniao_div {
+  display: none;
+  z-index: 2;
+  padding: 2rem;
+  background-color: #fefefea6;
+  text-align: justify;
+  line-height: 1.4;
+}
+#subaru:hover,
+#subaru:focus + .subaru_opiniao_div {
+  display: block;
+}
+.omega_opiniao_div {
+  display: none;
+  z-index: 2;
+  padding: 2rem;
+  background-color: #fefefea6;
+  text-align: justify;
+  line-height: 1.4;
+  transition: 0.5s;
+}
+
+#omega:hover,
+#omega:focus + .omega_opiniao_div {
+  display: block;
+}
+.car_text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #141414;
+  background: #fefefe;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+}

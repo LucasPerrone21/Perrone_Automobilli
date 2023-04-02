@@ -12,10 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="nossosProjetos.css">
+    <link rel="stylesheet" href="projetos.css">
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
         <div>
             <img class="logomarca" src="logo.svg" alt="">
         </div>
@@ -29,28 +30,80 @@
     </header>
 
     <main>
-        <h1 class="cars_title">Nossos Projetos</h1>
-        <ul class="car_list">
-            <li class="car_list_item">
-                <h2 class="car_title">Nissan "GREYZILLA"</h2>
-                <img class="car_img" src="Projetos/R34_GREYZILLA/GTR_1.png" alt="Foto do carro">
-                <p class="car_text">"O lendário carro esportivo japonês que combinou desempenho incrível e design icônico."</p>
-            </li>
-            <li class="car_list_item">
-                <h2 class="car_title">Subbie WRX</h2>
-                <img class="car_img" src="Projetos/Subarão/2.png" alt="Foto do carro">
-                <p class="car_text">"Monstro na terra, com sua imponência e poder, impressiona a todos que o veem passar."</p>
-            </li>
-            <li class="car_list_item">
-                <h2 class="car_title">Chevrolet Omega</h2>
-                <img class="car_img" src="Projetos/OMEGA/6.png" alt="Foto do carro">
-                <p class="car_text">"experiência única para os amantes de velocidade e derrapagens."</p>
-            </li>
-        </ul>
+        <section alt="Projetos Principais">
+            <div class="projetos_box">
+                <h1 class="projetos_titulo">Nossos Projetos</h1>
+                <ul class="car_list">
+                    <li class="car_list_item">
+                        <h2 class="car_title">Nissan "GREYZILLA"</h2>
+                        <button id="nissan"><img class="car_img" src="Projetos/R34_GREYZILLA/GTR_1.png" alt="Foto do carro"></button>
+
+                        <div class="nissan_opiniao_div">
+                            <h3 class="opiniao_titulo">Opinião do dono:</h3>
+                            <p>Como proprietário do Greyzilla R34, posso dizer que a experiência de dirigir um carro tão icônico é única. Desde o momento em que coloquei as mãos no volante, senti a adrenalina correr pelas veias, ansioso para ver do que esse carro era capaz. A aceleração é incomparável, e a maneira como ele se agarra à estrada em curvas é impressionante. A estabilidade e o controle são inigualáveis, e o som do motor ecoando pelas ruas é música para os ouvidos de qualquer entusiasta de carros.</p>
+
+                        </div>
+                        <p class="car_text">"O lendário carro esportivo japonês que combinou desempenho incrível e design icônico."</p>
+                    </li>
+                    <li class="car_list_item">
+                        <h2 class="car_title">Subbie WRX</h2>
+
+                        <button id="subaru"><img class="car_img" src="Projetos/Subarão/2.png" alt="Foto do carro"></button>
+                        <div class="subaru_opiniao_div">
+                            <h3 class="opiniao_titulo">Opinião do dono:</h3>
+                            <p>Como um orgulhoso proprietário de um Subaru preparado para rally, posso dizer que este carro é verdadeiramente incrível nas competições de rally. Com um motor boxer turbo de quatro cilindros, tração nas quatro rodas e uma suspensão ajustável, este carro foi projetado para vencer corridas em terrenos difíceis. Sua resposta rápida ao acelerador e excelente estabilidade em curvas fazem deste carro uma verdadeira máquina de corrida. Desde a primeira vez que levei este carro para uma corrida de rally, eu soube que tinha algo especial em minhas mãos. O carro sempre me ajudou a alcançar resultados incríveis nas competições. Com a ajuda da minha equipe de mecânicos e engenheiros, o carro está sempre em condições perfeitas para a corrida. Não há nada melhor do que sentir a adrenalina pulsando nas veias enquanto eu desafio os limites e empurro este carro até o seu máximo. O Subaru é um verdadeiro campeão do rally e estou orgulhoso de fazer parte dessa história.</p>
+                        </div>
+
+                        <p class="car_text">"Monstro na terra, com sua imponência e poder, impressiona a todos que o veem passar."</p>
+                    </li>
+                    <li class="car_list_item">
+                        <h2 class="car_title">Chevrolet Omega</h2>
+
+                        <button id="omega"><img class="car_img" src="Projetos/OMEGA/6.png" alt="Foto do carro"></button>
+                        <div class="omega_opiniao_div">
+
+                            <h3 class="opiniao_titulo">Opinião do dono:</h3>
+                            <p>"Meu Omega foi preparado para drift, posso dizer que esse carro é uma verdadeira máquina nas pistas. O motor V6 de 3.8 litros entrega uma potência incrível e uma resposta rápida ao acelerador, permitindo que eu execute manobras com facilidade e precisão. A suspensão ajustada, os pneus de alta performance e o sistema de freios de alta capacidade trabalham juntos para manter o carro controlado e estável, mesmo nas curvas mais desafiadoras. A cabine espaçosa e confortável me permite ficar focado e concentrado durante as corridas. Não há nada melhor do que ouvir o som do motor enquanto o carro desliza suavemente pela pista. Estou muito satisfeito com meu carrinho e mal posso esperar para participar de mais competições e eventos para mostrar todo o seu potencial."</p>
+
+                        </div>
+
+                        <p class="car_text">"experiência única para os amantes de velocidade e derrapagens."</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <footer class="rodape">
-        <p>Este site é apenas para fins de estudo e não possui fins comerciais.</p>
+    <footer>
+        <ul class="rodape_box1">
+            <li class="redes_sociais">
+                <h3 class="rodape_titulo">Siga nossas redes sociais</h3>
+                <p>Fique ligado em promoções e sorteios</p>
+                <ul class="redes_sociais_box">
+                    <li><a href="#"><img class="redes_sociais_icones" src="Imagens/icones/icons8-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img class="redes_sociais_icones" src="Imagens/icones/icons8-instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="#"><img class="redes_sociais_icones" src="Imagens/icones/icons8-reproduzir-youtube.svg" alt="Youtube"></a></li>
+                </ul>
+            </li>
+            <li class="encontre">
+                <h3 class="rodape_titulo">Encontre-nos</h3>
+                <ul class="encontre_lista">
+                    <li>
+                        <p>Salvador - BA</p>
+                    </li>
+                    <li>
+                        <p>Feira de Santana - BA</p>
+                    </li>
+                    <li>
+                        <p>Lauro de Freitas - BA</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="rodape_box2">
+            <p>Site feito apenas com princípios de estudo, tudo feito aqui é puramente fictício</p>
+            <p>Feito por: Lucas Perrone</p>
+        </div>
     </footer>
 
 
