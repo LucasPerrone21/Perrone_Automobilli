@@ -250,6 +250,7 @@ body {
   .servicos {
     padding: 0 0 0 0;
     justify-content: space-around;
+    background-image: url(Imagens/background_home_mobile.jpg);
   }
 
   .servicos_titulo {
