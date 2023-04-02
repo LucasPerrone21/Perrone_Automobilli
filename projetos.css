@@ -29,6 +29,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 .car_list_item {
@@ -37,7 +38,11 @@ button {
   width: 40%;
   align-items: center;
   margin-bottom: 2rem;
-  box-shadow: 10px 10px 20px 4px black;
+  transition: 200ms;
+}
+
+.car_list_item:hover {
+  scale: 1.01;
 }
 
 .car_title {
@@ -52,9 +57,9 @@ button {
 .car_img {
   width: 100%;
   object-fit: cover;
-
   position: relative;
 }
+
 .opiniao_titulo {
   font-size: 1.4rem;
   text-align: center;
@@ -69,7 +74,7 @@ button {
   text-align: justify;
   line-height: 1.4;
 }
-#nissan:hover,
+
 #nissan:focus + .nissan_opiniao_div {
   display: block;
 }
@@ -82,7 +87,7 @@ button {
   text-align: justify;
   line-height: 1.4;
 }
-#subaru:hover,
+
 #subaru:focus + .subaru_opiniao_div {
   display: block;
 }
